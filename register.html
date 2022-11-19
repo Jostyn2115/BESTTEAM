@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./scr/CSS/style.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scr/JS/app.js">
+
+    <title>CARRITO</title>
+</head>
+
+<body>
+    <!--Formulario-->
+    <div class="container py-3">
+        <form>
+            <div class="mb-3">
+                <label for="idNombre" class="form-label"><i class="fa-solid fa-file-signature Si"></i>Nombre: </label>
+                <input id="idNombre" class="" type="text" placeholder="Escribe tu nombre" />
+                <small id="idErrorNombre" style="color: red; display: none;"></small>
+            </div>
+            <div class="mb-3">
+                <label for="idApellido" class="form-label"> <i class="fa-solid fa-hand-back-fist Si"></i>Apellidos: </label>
+                <input id="idApellido" class="" type="text" placeholder="Escribe tu apellido" />
+                <small id="idErrorApellido" style=""></small>
+            </div>
+            <div class="mb-3">
+                <label for="idCorreo" class="form-label"> <i class="fa-solid fa-envelope-circle-check Si"></i>Correo: </label>
+                <input id="idCorreo" class="" type="text" placeholder="Escribe tu correo" />
+                <small id="idErrorCorreo" style="color: red; display: none;"></small>
+            </div>
+            <div class="mb-3">
+                <label for="idInstitucion" class="form-label"> <i class="fa-solid fa-archway Si"></i> Institución: </label>
+                <input id="idInstitucion" class="" type="text" placeholder="Escribe tu Institución" />
+                <small id="idErrorInstitucion" style="color: red; display: none;"></small>
+            </div>
+        </form>
+        <br>
+        <br>
+        <button class="" onclick="">Enviar</button>
+
+    </div>
+
+
+
+</body>
+
+
+<!--Modal Registro-->
+<div class="modal fade" id="mRegistro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="PrimerModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="PrimerModalLabel">Modal Registro</h5>
+            </div>
+            <div class="modal-body">
+                <span id="sNombre"></span>
+                <br>
+                <span id="sApellido"></span>
+                <br>
+                <span id="sCorreo"></span>
+                <br>
+                <span id="sInstitucion"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
